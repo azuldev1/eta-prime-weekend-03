@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var memes = require('../public/data/memes.json');
+var memes = require('../data/memes.json');
 var fs = require('fs');
 
 /* GET home page. */

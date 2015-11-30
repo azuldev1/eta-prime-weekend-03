@@ -27,7 +27,7 @@ $(document).ready(function() {
     // finally, make an ajax call to /kittehs, using the POST method, and send the data
     $.ajax({url: '/comments',
       type: 'post',
-      data: newcomments
+      data: newKitteh
     }).done(function(data) {
 
       // when ajax is done, display the data by appending it to the DOM
