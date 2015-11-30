@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  
+
+  
+  #base_memes 
+    for elem in data
+      img(src=elem.url)
+      // this is the form, with id='newKitteh'
+      form#newComment
+        input(type="text" name="bCommment" placeholder="Enter top text")
+        input(type="text" name="tComment" placeholder="Enter bottom text")
+        button(type="submit") Submit
+      
+    
