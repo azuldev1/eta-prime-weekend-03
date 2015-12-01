@@ -7,9 +7,11 @@ block content
   #base_memes 
     for elem in data
       img(src=elem.url)
-      // this is the form, with id='newKitteh'
-      form#newComment
-        input(type="text" name=elem.id placeholder="Enter your commment")
+      // this is the form, with id='newcomment'
+      form.newComment
+        input(type="text" name="message" placeholder="Enter your commment")
+        input(type="hidden" name="id" value=elem.id)
         button(type="submit") Submit
-      
-    
+      ul(id="content" + elem.id)
+        each val in com
+          li= val.message

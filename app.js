@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var memes = require('./routes/memes');
 var comments = require('./routes/comments');
+var test = require('./routes/test');
 
 
 
@@ -39,6 +40,7 @@ app.use('/users', users);
 // finally, use our routes on these base URLs
 app.use('/', index);
 app.use('/memes', memes);
+app.use('/test', test);
 app.use('/comments', comments)
 
 // catch 404 and forward to error handler
